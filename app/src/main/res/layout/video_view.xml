@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:layout_centerInParent="true">
+
+			<com.ali.entertaiment.VideoViewCompat
+				android:fitsSystemWindows="true"
+				android:layout_height="fill_parent"
+				android:layout_centerInParent="true"
+				android:layout_width="match_parent"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentRight="true"
+				android:scaleType="centerCrop"
+				android:adjustViewBounds="true"
+				android:tag="video"/>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_alignParentBottom="true"
+		android:layout_height="wrap_content"
+		android:tag="video_controller"
+		android:layout_width="match_parent"
+		android:background="#88000000"
+		android:orientation="vertical">
+
+		<SeekBar
+			android:tag="seek"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<TextView
+				android:textColor="#ffffff"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:tag="currentTime"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+			<ImageView
+				android:tag="rewind"
+				android:layout_height="wrap_content"
+				android:src="@android:drawable/ic_media_rew"
+				android:layout_width="wrap_content"
+				android:layout_weight="1.0"/>
+
+			<ImageView
+				android:tag="play"
+				android:src="@android:drawable/ic_media_play"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1.0"/>
+
+			<ImageView
+				android:tag="fastfoward"
+				android:layout_height="wrap_content"
+				android:src="@android:drawable/ic_media_ff"
+				android:layout_width="wrap_content"
+				android:layout_weight="1.0"/>
+
+			<TextView
+				android:textColor="#ffffff"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:tag="totalTime"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

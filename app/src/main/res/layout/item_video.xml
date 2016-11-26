@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+
+	<RelativeLayout android:layout_height="100dp"
+		android:layout_width="100dp">
+	<ImageView
+		android:layout_height="100dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="100dp"
+		android:id="@+id/thumb"/>
+		<TextView
+			android:layout_alignParentBottom="true"
+			android:background="#88000000"
+			android:textColor="#ffffff"
+			android:layout_alignParentRight="true"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:id="@+id/duration"/>
+	</RelativeLayout>
+	<Space android:layout_width="1dp"
+		android:layout_height="fill_parent"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="fill_parent"
+			android:id="@+id/title"/>
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="fill_parent"
+			android:id="@+id/dateCre"/>
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="fill_parent"
+			android:id="@+id/autor"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
